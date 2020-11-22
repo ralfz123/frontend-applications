@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+##### Frontend Applications 20-21
+# The car in the city
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Frontend Applications, a course of the Tech-track of Information Design. It is a thema semester of the third year from the study [CMD](https://www.cmd-amsterdam.nl/). In this course I will learn to clean raw data, transform the data and apply it in a datavisualization using D3._
 
-## Available Scripts
+## :rocket: Purpose of Project
+Commissioned by de Volkskrant, I have to look for an interesting angle on 'The car in the city'. This allows me to help the editorial staff of de Volkskrant to write interesting and new articles.
+In this project, I take an interesting research question and research it completely. I am going to look at what data is available in the [RDW datasets](https://opendata.rdw.nl/browse?category=Parkeren&provenance=official&page=1) that we have received. I will also clean up this data and transform it into usable data. With this data and the research question (which I want to answer) I will make a data visualization using [D3](https://d3js.org/).
 
-In the project directory, you can run:
+## :heart_eyes: Concept
+### Research Question
+**What is the difference in terms of how busy electric charging is between day and evening in the Hilversum area?**  
+_My assumption is that the evening was much busier than the electric charge in the morning, because at night, everyone at home and wants his / her car charging. In the morning, everyone takes their car to work._
 
-### `npm start`
+#### Sub questions
+1. When is it busy in the parking areas (in parking lots / in parking garages)?
+   _My assumption is that it can be very busy, especially on holidays and weekends._
+2. Is it busier in the evening than during the day in the parking areas?
+    _My assumption is that there is a certain balance in terms of activity between daytime and evening. People work during the day (now mainly at home #corona) and most people are at home in the evening._
+3. Is it possible to reserve a parking space?
+    _My assumption is that there are subscriptions to parking areas and that you therefore have priority to park somewhere._
+4. Is there a maximum time that you can park in a parking space (parking times in connection with the car charged)?
+    _My assumption is that you can park in a parking area indefinitely, but that there are opening and closing times for a parking area._
+5. Why are there not several electric charging points at parking places (outside the center)?
+    _My assumption is that there is not enough enthusiasm for that (because not many people have an electric car yet) ._
+6. Why are there only electric cars allowed in such a parking lot?
+    _My assumption is that there are parking areas that are only intended for electric cars._
+7. How expensive is it for electric cars to park?
+    _My assumption is that parking is the same for both electric cars and normal cars. By the way, this depends on where you park._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### :bulb: Idea
+I want to make a data visualization, using D3, to show the reader how 'ideal' the life is of an electric car driver who lives in the city while still having to charge his / her car.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://raw.githubusercontent.com/wiki/ralfz123/frontend-data/img/sketch-v6.jpg" width="800px">
 
-### `npm test`
+### [🔴 Dataviz live version here](https://ralfz123.github.io/frontend-data/d3/index.html)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :1234: Data  
+I think I can use [this dataset](https://github.com/ralfz123/frontend-data/wiki/Onderzoek-&-Concept-%F0%9F%94%8D#data) for my subject.
+The data variables I think I can use, are:
+- `lat`  
+- `lng` 
+- `available`
+- `charging`
 
-### `npm run build`
+👉 Click [here](https://github.com/ralfz123/functional-programming/wiki/Onderzoek-%F0%9F%94%8D) for more details about my project research.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dataset structure
+```
+{
+ point: {
+  lat: 52.21061864,
+  lng: 5.17506312
+},
+ status: {
+  available: "2",
+  charging: "0"
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :nerd_face: Technical summary
+This data visualization will be built, using:
+- JavaScript
+- D3
+- React.js
+- [Functional Programming Patterns](https://github.com/ralfz123/frontend-data/wiki/Functional-Patterns)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :gear: Install
+1. Clone the repository:  
+```
+git clone https://github.com/ralfz123/functional-programming.git
+```
 
-### `npm run eject`
+2. Install dependencies   
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. To run the app   
+```
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Go to [localhost](http://localhost3000/) in the browser
+```
+http://localhost:3000/
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## :file_folder: Resources
+Credits to [Danny de Vries](https://github.com/dandevri) && [Laurens Aarnoudse](https://github.com/Razpudding) && [Robert Spier](https://github.com/roberrrt-s) for giving interesting lectures about Functional Programming and Frontend Data and how to deal with it. I would also like to thank @vuurvos1 and @RowinRuizendaal for helping and thinking.
 
-## Learn More
+- Aarnoudse, L.  (2020, October 28). Rubric. Consulted from https://github.com/cmda-tt/course-20-21
+- Aarnoudse, L.  (2020, October 28). Slides. Consulted from https://cmda-tt.github.io/course-20-21/slides/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## :cop: License
+This project from [Ralf](https://github.com/ralfz123) has a [MIT © License](https://github.com/ralfz123/frontend-applications/blob/main/LICENSE)
