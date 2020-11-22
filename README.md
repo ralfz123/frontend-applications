@@ -76,7 +76,7 @@ git clone https://github.com/ralfz123/functional-programming.git
 npm install
 ```
 
-3. To run the app   
+3. Run the app   
 ```
 npm start
 ```
