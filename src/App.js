@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Intro from './components/Intro';
 import FactOfTheDay from './components/FactOfTheDay';
