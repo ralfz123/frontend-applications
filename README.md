@@ -7,6 +7,12 @@ _Frontend Applications, a course of the Tech-track of Information Design. It is 
 Commissioned by de Volkskrant, I have to look for an interesting angle on 'The car in the city'. This allows me to help the editorial staff of de Volkskrant to write interesting and new articles.
 In this project, I take an interesting research question and research it completely. I am going to look at what data is available in the [RDW datasets](https://opendata.rdw.nl/browse?category=Parkeren&provenance=official&page=1) that we have received. I will also clean up this data and transform it into usable data. With this data and the research question (which I want to answer) I will make a data visualization using [D3](https://d3js.org/).
 
+## The exercise
+The assignment is to make a narrative application for the Volkskrant, with the theme 'The car in the city'. It is important that the story has a news value and that everything forms a whole. Incidentally, the application must be made in a front-end framework. As a frontend framework I use [React.js](https://reactjs.org/).
+
+
+👉 Click [here](https://github.com/ralfz123/functional-programming/wiki/Onderzoek-%F0%9F%94%8D) for more details about my project research.
+
 ## :heart_eyes: Concept
 ### Research Question
 **What is the difference in terms of how busy electric charging is between day and evening in the Hilversum area?**  
@@ -42,8 +48,6 @@ The data variables I think I can use, are:
 - `lng` 
 - `available`
 - `charging`
-
-👉 Click [here](https://github.com/ralfz123/functional-programming/wiki/Onderzoek-%F0%9F%94%8D) for more details about my project research.
 
 ### Dataset structure
 ```

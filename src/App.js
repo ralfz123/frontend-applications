@@ -4,6 +4,7 @@ import FactOfTheDay from './components/FactOfTheDay';
 import Dataviz from './components/Dataviz';
 import Insights from './components/Insights';
 import FutureVision from './components/FutureVision';
+import { SVGContainer } from './components/SVGContainer'
 
 function App() {
   return (
@@ -11,7 +12,12 @@ function App() {
       <h1>Wat is het verschil qua drukte van elektrisch laden tussen dag en avond in gemeente Hilversum?</h1>
       <Intro />
       <FactOfTheDay />
-      <Dataviz />
+      <Dataviz width={900} height={500} />
+      <SVGContainer
+        width={900}
+        height={500}
+        x={60}
+        y={20} />
       <Insights />
       <FutureVision />
     </div>
