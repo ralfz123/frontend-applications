@@ -11,7 +11,7 @@ function Dataviz({ node }) {
 
 	return (
 		// <div className='layout-block'></div>
-		<g ref={parent}></g>
+		<g className="parent" ref={parent}></g>
 	);
 
 	function createMapPlot() {
@@ -74,8 +74,8 @@ function Dataviz({ node }) {
 				const path = d3.geoPath();
 				const zoom = d3.zoom().scaleExtent([1, 30]).on('zoom', zoomed); // Zoom function
 
-				const width = 975;
-				const height = 610;
+				const width = 800;
+				const height = 500;
 
 				const svg = d3
 					.select('svg')
