@@ -1,30 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Styling - input
 const StyledInput = styled.input`
-    cursor: pointer;
-`
+	cursor: pointer;
+`;
 
+// Styling - label
 const StyledLabel = styled.label`
 	cursor: pointer;
-    font-size: 1rem;
+	font-size: 1rem;
 
-    :hover {
-        text-decoration: underline;
-	    cursor: pointer;
-	    color: rgb(53, 80, 50);
-    }
+    /* Hover - label */
+	:hover {
+		text-decoration: underline;
+		cursor: pointer;
+		color: rgb(53, 80, 50);
+	}
+`;
 
-`
-
-
-function Button({value}) {
+// Create the Buttons
+function FilterButton({ value }) {
 	return (
 		<>
-			<StyledInput type='radio' value={value} />
-            <StyledLabel htmlFor={value}>{value}</StyledLabel>
+			<StyledInput type='radio' id={value} name={value} value={value} />
+			<StyledLabel for={value}>{value}</StyledLabel>
 		</>
 	);
 }
 
-export default Button;
+export default FilterButton;

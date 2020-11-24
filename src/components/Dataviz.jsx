@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import * as topojson from 'topojson-client';
 import * as d3 from 'd3';
-import Button from './Buttons';
+import FilterButton from './Buttons';
 
 function Dataviz({ node }) {
 	const parent = useRef(node);
@@ -14,8 +14,9 @@ function Dataviz({ node }) {
 		// <div className='layout-block'></div>
 		<>
 			<g className='parent' ref={parent}></g>
-			<Button value='Overdag' />
-			<Button value="'s Avonds" />
+			<div><FilterButton value='Overdag' />
+			<FilterButton value="'s Avonds" /></div>
+			
 		</>
 	);
 
