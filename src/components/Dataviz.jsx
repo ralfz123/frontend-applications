@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import * as topojson from "topojson-client";
-import * as d3 from "d3";
+import * as topojson from 'topojson-client';
+import * as d3 from 'd3';
+import Button from './Buttons';
 
 function Dataviz({ node }) {
 	const parent = useRef(node);
@@ -11,7 +12,11 @@ function Dataviz({ node }) {
 
 	return (
 		// <div className='layout-block'></div>
-		<g className="parent" ref={parent}></g>
+		<>
+			<g className='parent' ref={parent}></g>
+			<Button value='Overdag' />
+			<Button value="'s Avonds" />
+		</>
 	);
 
 	function createMapPlot() {
