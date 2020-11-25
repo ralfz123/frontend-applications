@@ -4,6 +4,7 @@ import Dataviz from './components/Dataviz';
 import Insights from './components/Insights';
 import FutureVision from './components/FutureVision';
 import { SVGContainer } from './components/SVGContainer';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 			<Dataviz width={1100} height={600} />
 			<Insights />
 			<FutureVision />
+			<Footer />
 		</>
 	);
 }
