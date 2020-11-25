@@ -12,8 +12,11 @@ body {
 }
 
 h1 {
-	margin: 1em 1em;
-	/* color: #ffffff; */
+	margin: 0 auto;
+	margin-top: 1em;
+	color: #1d4236ce;
+	width: 70vw;
+	font-size: 1.5em;
 }
 
 /* ***************************************************** */
@@ -22,10 +25,20 @@ h1 {
 
 .layout-block {
 	background-color: #155540ce;
-	margin: 5em 1em;
+	/* background-color: #0c3527ce; */
+	margin: 0 auto;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	/* margin: 3em 1em; */
 	padding: 1em;
 	padding-top: 0.5em;
 	color: #ffffff;
 	border-radius: 10px;
-	/* box-shadow: 5px 5px #88888869; */
+	width: 70vw;
+}
+
+.layout-block p {
+	/* font-size: 1.4vw; */
+	max-width: 90%;
+	/* margin: 0 auto; */
 }

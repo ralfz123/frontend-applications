@@ -4,19 +4,12 @@ import styled from 'styled-components';
 // Styling - h3
 const StyledHeadingThree = styled.h3`
 	font-style: italic;
+	padding-top: 0.5em;
 `;
 
-// // Styling - p
-// const StyledLabel = styled.label`
-// 	cursor: pointer;
-// 	font-size: 1rem;
-
-//     /* Hover - label */
-// 	:hover {
-// 		text-decoration: underline;
-// 		cursor: pointer;
-// 		color: rgb(53, 80, 50);
-// 	}
+// const StyledP = styled.p`
+// 	/* margin: 0 auto;
+// 	width: 46vw; */
 // `;
 
 function Insights() {
@@ -45,8 +38,8 @@ function Insights() {
 				laadpalen over, zowel in de ochtend als in de avond? En ook nog
 				omdat de meeste mensen rond 08:00u naar hun werk gaan, zullen er
 				dus meer beschikbare laadpalen bijkomen. Het gaat dan wel om
-				verschillende laadpalen, maar toch zie je een aantal in de
-				datavisualisatie die altijd beschikbaar zijn. Worden deze
+				laadpalen op verschillende plekken, maar toch zie je een aantal
+				in de datavisualisatie die altijd beschikbaar zijn. Worden deze
 				laadpalen dan nooit of veel te weinig gebruikt? Misschien zouden
 				ze eens onderzoek moeten gaan doen of de laadpalen daadwerkelijk
 				allemaal gebruikt worden. Dan kunnen ze misschien de laadpalen
@@ -54,14 +47,14 @@ function Insights() {
 				zijn.
 			</p>
 
-			<StyledHeadingThree>?...?</StyledHeadingThree>
-			<p>
+			{/* <StyledHeadingThree>?...?</StyledHeadingThree>
+			<StyledP>
 				Zijn dit auto’s die iets na dit tijdstip van de lader worden
 				gehaald en de bestuurders hiermee naar het werk gaan? Of zijn
 				het auto’s die zojuist aan de lader zijn gezet door
 				taxichauffeurs die net hun ritje erop hebben zitten van het
 				vervoeren van 3 dronken feestgangers?
-			</p>
+			</StyledP> */}
 		</div>
 	);
 }

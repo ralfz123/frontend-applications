@@ -14,29 +14,41 @@ function Dataviz({ node }) {
 		// <div className='layout-block'></div>
 		<>
 			<g className='parent' ref={parent}></g>
-			<div>
+			<div className='layout-block'>
+			<h3>Moment van de dag</h3>
 				<FilterButton value='Overdag' />
 				<FilterButton value="'s Avonds" />
 			</div>
-			<div className="perfecte-lees-width-12wrds">
-				Dit is data van een API endpoint dat bijhoudt hoeveel laadpalen
-				er per parkeergebied (denk aan parkeerterein) of
-				parkeermogelijkheid (denk aan een straat) bezet en beschikbaar
-				zijn. Hoewel dit een live API is, heb ik handmatig op twee
-				interessante tijdstippen de data gekopieerd. Dat zijn de
-				tijdstippen 08:00u 's ochtends en 20:00u 's avonds. De dag dat
-				deze data is gemeten is op een doordeweekse dag (dinsdag). 
-				Ik heb voor deze tijdstippen gekozen, omdat ik ze vrij interessant
-				 vond. Ik wilde een goede onderscheid maken tussen ochtend en avond,
-				dus daarom heb ik voor 08:00u en twaalf uur later 20:00u gekozen. 
-				Dit zijn juist de momenten wanneer iedereen ongeveer
-				naar zijn/haar werk gaat en wanneer iedereen thuis is. Een toekomststreven
-				zou zijn dat ik nog een dag uit het weekend pak om deze dag te vergelijken
-				met de doordeweeks dag. Dat zou nog behoorlijk interessant kunnen worden.
-				Al met al, door deze datavisualisatie komen er interessante inzichten uit 
-				die ik hieronder bespreek.
-
-				Beste inzoom transform values: transform="translate(-5409.990278326705,-2739.821940846097) scale(12.357011994069868)"
+			<div className='layout-block'>
+			<h3>Status laadpalen</h3>
+				<FilterButton value='Beschikbaar' />
+				<FilterButton value='Bezet' />
+			</div>
+			<div className='layout-block'>
+				<h2>Beschrijving</h2>
+				<p>
+					Dit is data van een API endpoint dat bijhoudt hoeveel
+					laadpalen er per parkeergebied (denk aan parkeerterein) of
+					parkeermogelijkheid (denk aan een straat) bezet en
+					beschikbaar zijn. Hoewel dit een live API is, heb ik
+					handmatig op twee interessante tijdstippen de data
+					gekopieerd. Dat zijn de tijdstippen 08:00u 's ochtends en
+					20:00u 's avonds. De dag dat deze data is gemeten is op een
+					doordeweekse dag (dinsdag). Ik heb voor deze tijdstippen
+					gekozen, omdat ik ze vrij interessant vond. Ik wilde een
+					goede onderscheid maken tussen ochtend en avond, dus daarom
+					heb ik voor 08:00u en twaalf uur later 20:00u gekozen. Dit
+					zijn juist de momenten wanneer iedereen ongeveer naar
+					zijn/haar werk gaat en wanneer iedereen thuis is. Een
+					toekomststreven zou zijn dat ik nog een dag uit het weekend
+					pak om deze dag te vergelijken met de doordeweeks dag. Dat
+					zou nog behoorlijk interessant kunnen worden. Al met al,
+					door deze datavisualisatie komen er interessante inzichten
+					uit die ik hieronder bespreek. Beste inzoom transform
+					values:
+					transform="translate(-5409.990278326705,-2739.821940846097)
+					scale(12.357011994069868)"
+				</p>
 			</div>
 		</>
 	);
