@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
 const StyledP = styled.p`
 	margin: 0 auto;
 	font-weight: 300;
-	font-size: .8em;
+	font-size: .9em;
 	padding: 0.2em 0em;
 `;
 

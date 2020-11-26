@@ -72,7 +72,7 @@ This data visualization will be built, using:
 ## :gear: Install
 1. Clone the repository:  
 ```
-git clone https://github.com/ralfz123/functional-programming.git
+git clone https://github.com/ralfz123/frontend-applications.git
 ```
 
 2. Install dependencies   
@@ -90,12 +90,18 @@ npm start
 http://localhost:3000/
 ```
 
+## :globe_with_meridians: Deployment via GitHub Pages
+1. Zet script in package.json
+2. run command en de app wordt gebuild.
+
 
 ## :file_folder: Resources
 Credits to [Danny de Vries](https://github.com/dandevri) && [Laurens Aarnoudse](https://github.com/Razpudding) && [Robert Spier](https://github.com/roberrrt-s) for giving interesting lectures about Functional Programming and Frontend Data and how to deal with it. I would also like to thank @vuurvos1 and @RowinRuizendaal for helping and thinking.
 
 - Aarnoudse, L.  (2020, October 28). Rubric. Consulted from https://github.com/cmda-tt/course-20-21
 - Aarnoudse, L.  (2020, October 28). Slides. Consulted from https://cmda-tt.github.io/course-20-21/slides/
+- Web Dev Simplified. (2020, November 18). Consulted from https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+- React documentation. (2020, November 19). Consulted from https://reactjs.org/docs/getting-started.html
 
 ## :cop: License
 This project from [Ralf](https://github.com/ralfz123) has a [MIT © License](https://github.com/ralfz123/frontend-applications/blob/main/LICENSE)

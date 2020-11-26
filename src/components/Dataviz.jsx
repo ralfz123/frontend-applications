@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import * as topojson from 'topojson-client';
 import * as d3 from 'd3';
 import FilterButton from './Buttons';
+import Filters from './Filter';
 
 function Dataviz({ node }) {
 	const parent = useRef(node);
@@ -11,19 +12,9 @@ function Dataviz({ node }) {
 	});
 
 	return (
-		// <div className='layout-block'></div>
 		<>
 			<g className='parent' ref={parent}></g>
-			<div className='layout-block'>
-			<h3>Moment van de dag</h3>
-				<FilterButton value='Overdag' />
-				<FilterButton value="'s Avonds" />
-			</div>
-			<div className='layout-block'>
-			<h3>Status laadpalen</h3>
-				<FilterButton value='Beschikbaar' />
-				<FilterButton value='Bezet' />
-			</div>
+			<Filters />
 			<div className='layout-block'>
 				<h2>Beschrijving</h2>
 				<p>
@@ -127,7 +118,6 @@ function Dataviz({ node }) {
 					.geoMercator()
 					.scale(6000)
 					.center([5.116667, 52.17]);
-				// .center([52.206720, 5.154676]);
 				const pathGenerator = path.projection(projection);
 
 				const gemeentes = g
@@ -287,29 +277,28 @@ function Dataviz({ node }) {
 
 				// Filter buttons in markup
 				const filterOptions = d3
-					.select('.filter-option')
 
 					// Filteroption "Beschikbaar"
-					.select('input#available')
+					.select('input#Beschikbaar')
 					.on('click', function clicking() {
 						console.log('"Available" clicked');
 						updatingMapAvailable(dotData);
 					});
 
 				// Filteroption "Bezet"
-				d3.select('input#busy').on('click', function clicking() {
+				d3.select('input#Bezet').on('click', function clicking() {
 					console.log('"Busy" clicked');
 					updatingMapBusy(dotData);
 				});
 
 				// Filteroption "Overdag"
-				d3.select('input#day').on('click', function clicking() {
+				d3.select('input#Overdag').on('click', function clicking() {
 					console.log('"Day" clicked');
 					handleClickTimeOfDay('day'); // Day data
 				});
 
 				// Filteroption "'s Avonds"
-				d3.select('input#eve').on('click', function clicking() {
+				d3.select('input#Avond').on('click', function clicking() {
 					console.log('"Eve" clicked');
 					handleClickTimeOfDay('eve'); // Eve data switch
 				});
@@ -358,7 +347,6 @@ function Dataviz({ node }) {
 				}
 			}
 		}
-		// D3 code END
 	}
 }
 

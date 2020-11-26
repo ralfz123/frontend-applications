@@ -13,7 +13,8 @@ function Intro() {
 				actueel onderwerp is dat steeds meer aan bod komt. Maar, al die
 				laadpalen, wanneer worden die gebruikt en worden ze wel àllemaal
 				gebruikt? Dat zijn vragen die ik in deze datastory zal
-				belichten.
+				belichten. In deze datastory zal ik omgeving Hilversum als focus
+				hebben, omdat mijn dataset op die omgeving gefocust is.
 			</p>
 		</div>
 	);
