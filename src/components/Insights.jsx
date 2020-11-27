@@ -31,7 +31,7 @@ function Insights() {
 			</p>
 
 			<StyledHeadingThree>
-				Ochtendritueel rond 08:00u - Toekomstige gevolgde actie
+				Ochtendritueel zorgt voor een overschot aan niet gebruikte laadpalen
 			</StyledHeadingThree>
 			<p>
 				Mijn vraag is hier: waarom zijn er nog zoveel beschikbare

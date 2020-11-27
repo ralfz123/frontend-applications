@@ -5,12 +5,11 @@ function Filters() {
 	return (
 		<>
 			<div className='layout-block'>
+			<h2>Filters</h2>
 				<h3>Moment van de dag</h3>
 				<FilterButton value='Overdag' />
 				<FilterButton value='Avond' />
-			</div>
-
-			<div className='layout-block'>
+			
 				<h3>Status laadpalen</h3>
 				<FilterButton value='Beschikbaar' />
 				<FilterButton value='Bezet' />

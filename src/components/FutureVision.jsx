@@ -1,4 +1,6 @@
 import React from 'react';
+import img1 from '../img/huidige-scenario.png';
+import img2 from '../img/toekomst-scenario.png';
 
 function FutureVision() {
 	return (
@@ -10,22 +12,23 @@ function FutureVision() {
 				Hilversum een onderzoek te gaan starten naar hoeveel laadpalen
 				er weinig tot niet worden gebruikt. Aan de hand daarvan kan er
 				een afweging gemaakt worden of die palen worden weggehaald en op
-				nieuwe plekken worden neergezet waar andere palen meestal al
-				vrij snel bezet zijn. Dit is beter voor milieu en mens.
+				nieuwe plekken worden neergezet (in grotere getalen) waar andere
+				palen meestal al vrij snel bezet zijn. Dit is beter voor milieu
+				en mens.
 			</p>
 			<p>
 				Ik denk overigens dat de drukte in de avond veel gaat toenemen,
 				omdat er nu al veel laadpalen bezet zijn in de avond en de groei
-				van elektrische auto's blijft maar stijgen. Foto niet-ideaal
-				scenario (nu)
-				<img src='.'></img>
-				Foto ideaal toekomst scenario (meer beschikbare laadpalen)
-				<img />
+				van elektrische auto's blijft maar stijgen.{' '}
 			</p>
+			<p>Huidige scenario</p>
+			<img alt='huidige scenario in de avond' src={img1} width='500px' />
+			<p>Toekomst scenario</p>
+			<img alt='toekomst scenario in de avond' src={img2} width='500px' />
 
-			<p>
+			{/* <p>
 				De meeste mensen nemen ook steeds meer een eigen laadpaal aan
-				huis. Waardoor je dus geen gezeur heb met andere bestuurders en
+				huis. Waardoor je dus geen gezeur hebt met andere bestuurders en
 				je je dus geen zorgen daarover hoeft te maken. Dus, als je
 				overstapt op elektrisch (of hybride) rijden en je wil je auto
 				nog rustig kunnen opladen zonder dat je rekening hoeft te houden
@@ -34,7 +37,7 @@ function FutureVision() {
 				voordeur een laadpaal standaard aanwezig is, dus dan hoef je je
 				daar al geen zorgen meer over te maken bij het wonen in een
 				nieuwe woning.
-			</p>
+			</p> */}
 		</div>
 	);
 }

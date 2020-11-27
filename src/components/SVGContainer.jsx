@@ -1,9 +1,8 @@
-export const SVGContainer = ({ children, width, height, x, y }) => {
+export const SVGContainer = ({ children, width, height}) => {
 	console.log('children', { children });
 	return (
 		<svg width={width} height={height}>
 			<g>
-				{/* transform={`translate(${x},${y})`} */}
 				{children}
 			</g>
 		</svg>

@@ -20,24 +20,12 @@ function Dataviz({ node }) {
 					Dit is data van een API endpoint dat bijhoudt hoeveel
 					laadpalen er per parkeergebied (denk aan parkeerterein) of
 					parkeermogelijkheid (denk aan een straat) bezet en
-					beschikbaar zijn. Hoewel dit een live API is, heb ik
-					handmatig op twee interessante tijdstippen de data
-					gekopieerd. Dat zijn de tijdstippen 08:00u 's ochtends en
-					20:00u 's avonds. De dag dat deze data is gemeten is op een
-					doordeweekse dag (dinsdag). Ik heb voor deze tijdstippen
-					gekozen, omdat ik ze vrij interessant vond. Ik wilde een
-					goede onderscheid maken tussen ochtend en avond, dus daarom
-					heb ik voor 08:00u en twaalf uur later 20:00u gekozen. Dit
+					beschikbaar zijn. Je kunt filteren op 08:00u 's ochtends en
+					20:00u 's avonds. Dit
 					zijn juist de momenten wanneer iedereen ongeveer naar
-					zijn/haar werk gaat en wanneer iedereen thuis is. Een
-					toekomststreven zou zijn dat ik nog een dag uit het weekend
-					pak om deze dag te vergelijken met de doordeweeks dag. Dat
-					zou nog behoorlijk interessant kunnen worden. Al met al,
+					zijn/haar werk gaat en wanneer iedereen thuis is. Al met al,
 					door deze datavisualisatie komen er interessante inzichten
-					uit die ik hieronder bespreek. Beste inzoom transform
-					values:
-					transform="translate(-5409.990278326705,-2739.821940846097)
-					scale(12.357011994069868)"
+					uit die ik hieronder bespreek.
 				</p>
 			</div>
 		</>
@@ -102,8 +90,10 @@ function Dataviz({ node }) {
 				const path = d3.geoPath();
 				const zoom = d3.zoom().scaleExtent([1, 30]).on('zoom', zoomed); // Zoom function
 
-				const width = 800;
-				const height = 500;
+				const width = 1100;
+				// 800;
+				const height = 600;
+				// 500;
 
 				const svg = d3
 					.select('svg')

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
 // Styling - input
@@ -15,16 +15,26 @@ const StyledLabel = styled.label`
 	:hover {
 		text-decoration: underline;
 		cursor: pointer;
-		color: rgb(53, 80, 50);
+		color: rgb(53, 70, 50);
 	}
 `;
 
+
+
 // Create the Buttons
 function FilterButton({ value }) {
+
+	// const [radio, setRadio] = useState("Overdag");
+
+	// useEffect(() => {
+
+	// }, [setRadio])
+
 	return (
 		<>
 			<StyledInput type='radio' id={value} name={value} value={value} />
-			<StyledLabel for={value}>{value}</StyledLabel>
+			{/* checked={radio === {value}} onChange={(e) => {setRadio(e.target.value)}} */}
+			<StyledLabel htmlFor={value}>{value}</StyledLabel>
 		</>
 	);
 }
