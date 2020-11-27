@@ -1,19 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import * as topojson from 'topojson-client';
 import * as d3 from 'd3';
-import FilterButton from './Buttons';
 import Filters from './Filter';
 
 function Dataviz({ node }) {
-	const parent = useRef(node);
-	console.log(parent);
+	// const parent = useRef(node);
+	// console.log(parent);
 	useEffect(() => {
 		createMapPlot();
 	});
 
 	return (
 		<>
-			<g className='parent' ref={parent}></g>
+			{/* <g className='parent' ref={parent}></g> */}
 			<Filters />
 			<div className='layout-block'>
 				<h2>Beschrijving</h2>
@@ -45,8 +44,8 @@ function Dataviz({ node }) {
 	);
 
 	function createMapPlot() {
-		console.log('creating map plot', parent);
-		const parrentSel = d3.select(parent.current);
+		// console.log('creating map plot', parent);
+		// const parrentSel = d3.select(parent.current);
 
 		// D3 code pasted from FD
 		const endpointOne =
@@ -54,8 +53,7 @@ function Dataviz({ node }) {
 		const endpointTwo =
 			'https://raw.githubusercontent.com/ralfz123/frontend-data/main/d3/data/dataEve.json'; // Data from a Eve - 20:00h
 
-		// Fetching data
-		// Receiving data using fetch()
+		// Fetching data - Receiving data using fetch()
 		const dataDay = fetch(endpointOne).then((response) => response.json()); // Parses JSON data
 		const dataEve = fetch(endpointTwo).then((response) => response.json()); // Parses JSON data
 
@@ -112,7 +110,7 @@ function Dataviz({ node }) {
 					.attr('viewBox', [0, 0, width, height])
 					.on('click', reset);
 
-				const g = svg.append('g');
+				const g = d3.select('g');
 
 				const projection = d3
 					.geoMercator()
