@@ -21,12 +21,13 @@ function Dataviz({ node }) {
 					laadpalen er per parkeergebied (denk aan parkeerterein) of
 					parkeermogelijkheid (denk aan een straat) bezet en
 					beschikbaar zijn. Je kunt filteren op 08:00u 's ochtends en
-					20:00u 's avonds. Dit
-					zijn juist de momenten wanneer iedereen ongeveer naar
-					zijn/haar werk gaat en wanneer iedereen thuis is. Al met al,
-					door deze datavisualisatie komen er interessante inzichten
-					uit die ik hieronder bespreek.
+					20:00u 's avonds. Dit zijn juist de momenten wanneer
+					iedereen ongeveer naar zijn/haar werk gaat en wanneer
+					iedereen thuis is. Al met al, door deze datavisualisatie
+					komen er interessante inzichten uit die ik hieronder
+					bespreek.
 				</p>
+				<p>Bron: Oplaadpalen.nl</p>
 			</div>
 		</>
 	);
