@@ -39,7 +39,8 @@ I want to make a data visualization, using D3, to show the reader how 'ideal' th
 
 <img src="https://raw.githubusercontent.com/wiki/ralfz123/frontend-data/img/sketch-v6.jpg" width="800px">
 
-### [🔴 Dataviz live version here](https://ralfz123.github.io/frontend-data/d3/index.html)
+### [:red_circle: Link to app](https://ralfz123.github.io/frontend-applications/)
+
 
 ## :1234: Data  
 I think I can use [this dataset](https://github.com/ralfz123/frontend-data/wiki/Onderzoek-&-Concept-%F0%9F%94%8D#data) for my subject.
