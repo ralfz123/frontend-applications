@@ -9,12 +9,10 @@ const StyledWrapper = styled.div`
 const StyledFact = styled.p`
 	background-color: #2d5a4cce;
 	padding: 0.5em;
-	/* margin: 0 auto; */
 	border-radius: 10px;
 	font-weight: 600;
 	font-size: 1.5em;
 	width: 65%;
-	/* width: 22vw; */
 `;
 
 const StyledSubtitle = styled.p`

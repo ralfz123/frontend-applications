@@ -5,9 +5,6 @@ import styled from 'styled-components';
 const StyledDiv = styled.div`
 	padding: 1em;
 	background-color: #155540ce;
-	/* background-color: #084d36; */
-	/* background: linear-gradient(90deg, rgba(64,120,54,1) 0%, rgba(8,154,99,1) 100%); */
-
 	border-radius: 10px 10px 0px 0px;
 	text-align: center;
 	color: #ffffff;

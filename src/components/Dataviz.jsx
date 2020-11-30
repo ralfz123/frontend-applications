@@ -12,7 +12,6 @@ function Dataviz({ node }) {
 
 	return (
 		<>
-			{/* <g className='parent' ref={parent}></g> */}
 			<Filters />
 			<div className='layout-block'>
 				<h2>Beschrijving</h2>
@@ -33,9 +32,6 @@ function Dataviz({ node }) {
 	);
 
 	function createMapPlot() {
-		// console.log('creating map plot', parent);
-		// const parrentSel = d3.select(parent.current);
-
 		// D3 code pasted from FD
 		const endpointOne =
 			'https://raw.githubusercontent.com/ralfz123/frontend-data/main/d3/data/dataDay.json'; // Data from a Day - 08:00h

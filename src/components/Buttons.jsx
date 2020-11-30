@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 // Styling - input
@@ -11,7 +11,7 @@ const StyledLabel = styled.label`
 	cursor: pointer;
 	font-size: 1rem;
 
-    /* Hover - label */
+	/* Hover - label */
 	:hover {
 		text-decoration: underline;
 		cursor: pointer;
@@ -19,11 +19,8 @@ const StyledLabel = styled.label`
 	}
 `;
 
-
-
 // Create the Buttons
 function FilterButton({ value, name }) {
-
 	return (
 		<>
 			<StyledInput type='radio' id={value} name={name} value={value} />

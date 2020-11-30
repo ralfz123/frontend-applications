@@ -31,7 +31,8 @@ function Insights() {
 			</p>
 
 			<StyledHeadingThree>
-				Ochtendritueel zorgt voor een overschot aan niet gebruikte laadpalen
+				Ochtendritueel zorgt voor een overschot aan niet gebruikte
+				laadpalen
 			</StyledHeadingThree>
 			<p>
 				Mijn vraag is hier: waarom zijn er nog zoveel beschikbare
@@ -46,15 +47,6 @@ function Insights() {
 				verplaatsen naar plekken waar de laadpalen meestal al snel bezet
 				zijn.
 			</p>
-
-			{/* <StyledHeadingThree>?...?</StyledHeadingThree>
-			<StyledP>
-				Zijn dit auto’s die iets na dit tijdstip van de lader worden
-				gehaald en de bestuurders hiermee naar het werk gaan? Of zijn
-				het auto’s die zojuist aan de lader zijn gezet door
-				taxichauffeurs die net hun ritje erop hebben zitten van het
-				vervoeren van 3 dronken feestgangers?
-			</StyledP> */}
 		</div>
 	);
 }
