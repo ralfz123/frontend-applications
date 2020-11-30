@@ -3,9 +3,7 @@ import * as topojson from 'topojson-client';
 import * as d3 from 'd3';
 import Filters from './Filter';
 
-function Dataviz({ node }) {
-	// const parent = useRef(node);
-	// console.log(parent);
+function Dataviz() {
 	useEffect(() => {
 		createMapPlot();
 	});
