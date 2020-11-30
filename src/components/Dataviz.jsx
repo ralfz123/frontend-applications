@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import * as topojson from 'topojson-client';
 import * as d3 from 'd3';
 import Filters from './Filter';
@@ -320,7 +320,7 @@ function Dataviz() {
 
 				// Filter option Time Of Day - On click choose dataset to determine which time of day it is
 				function handleClickTimeOfDay(timeOfDay) {
-					if (timeOfDay == 'day') {
+					if (timeOfDay === 'day') {
 						console.log('This is DAY', combinedData[0]);
 						dots(combinedData[0]);
 					} else {
