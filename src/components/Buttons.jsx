@@ -24,16 +24,9 @@ const StyledLabel = styled.label`
 // Create the Buttons
 function FilterButton({ value, name }) {
 
-	// const [radio, setRadio] = useState("Overdag");
-
-	// useEffect(() => {
-
-	// }, [setRadio])
-
 	return (
 		<>
 			<StyledInput type='radio' id={value} name={name} value={value} />
-			{/* checked={radio === {value}} onChange={(e) => {setRadio(e.target.value)}} */}
 			<StyledLabel htmlFor={value}>{value}</StyledLabel>
 		</>
 	);
