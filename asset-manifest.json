@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/frontend-applications/static/css/main.05bbc5aa.chunk.css",
+    "main.js": "/frontend-applications/static/js/main.001134b5.chunk.js",
+    "main.js.map": "/frontend-applications/static/js/main.001134b5.chunk.js.map",
+    "runtime-main.js": "/frontend-applications/static/js/runtime-main.6f9e0c64.js",
+    "runtime-main.js.map": "/frontend-applications/static/js/runtime-main.6f9e0c64.js.map",
+    "static/js/2.f377ebdc.chunk.js": "/frontend-applications/static/js/2.f377ebdc.chunk.js",
+    "static/js/2.f377ebdc.chunk.js.map": "/frontend-applications/static/js/2.f377ebdc.chunk.js.map",
+    "index.html": "/frontend-applications/index.html",
+    "static/css/main.05bbc5aa.chunk.css.map": "/frontend-applications/static/css/main.05bbc5aa.chunk.css.map",
+    "static/js/2.f377ebdc.chunk.js.LICENSE.txt": "/frontend-applications/static/js/2.f377ebdc.chunk.js.LICENSE.txt",
+    "static/media/huidige-scenario.4e68640e.png": "/frontend-applications/static/media/huidige-scenario.4e68640e.png",
+    "static/media/toekomst-scenario.6a3f4c4d.png": "/frontend-applications/static/media/toekomst-scenario.6a3f4c4d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f9e0c64.js",
+    "static/js/2.f377ebdc.chunk.js",
+    "static/css/main.05bbc5aa.chunk.css",
+    "static/js/main.001134b5.chunk.js"
+  ]
+}
