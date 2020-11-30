@@ -1,4 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0c403dfb-a77e-4cdc-a6d9-c8c6eb5a1ca1/deploy-status)](https://app.netlify.com/sites/dataviz-article-devolkskrant/deploys)
 ##### Frontend Applications 20-21
 # The car in the city
 
@@ -90,11 +89,6 @@ npm start
 ```
 http://localhost:3000/
 ```
-
-## :globe_with_meridians: Deployment via GitHub Pages
-1. Zet script in package.json
-2. run command en de app wordt gebuild.
-
 
 ## :file_folder: Resources
 Credits to [Danny de Vries](https://github.com/dandevri) && [Laurens Aarnoudse](https://github.com/Razpudding) && [Robert Spier](https://github.com/roberrrt-s) for giving interesting lectures about Functional Programming and Frontend Data and how to deal with it. I would also like to thank @vuurvos1 and @RowinRuizendaal for helping and thinking.
