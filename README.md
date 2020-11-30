@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c403dfb-a77e-4cdc-a6d9-c8c6eb5a1ca1/deploy-status)](https://app.netlify.com/sites/dataviz-article-devolkskrant/deploys)
 ##### Frontend Applications 20-21
 # The car in the city
 
